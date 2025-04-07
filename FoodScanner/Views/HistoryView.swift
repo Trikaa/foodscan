@@ -10,18 +10,18 @@ struct HistoryView: View {
             VStack {
                 FilterBarView(selectedFilter: $selectedFilter)
 
-                List(filteredHistory, id: \.id) { product in
+                List(filteredHistory, id: \.productName) { product in
                     NavigationLink(destination: ProductDetailsView(product: product)) {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(product.productName)
                                 .font(.headline)
 
-                            Text("Brand: \(product.brand)")
+                            Text("\("brand".localized): \(product.brand)")
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
 
                             HStack {
-                                Text("Nutri-Score:")
+                                Text("nutri_score".localized)
                                     .font(.subheadline)
                                     .foregroundColor(.gray)
                                 Text(product.nutriScore.uppercased())
@@ -30,7 +30,7 @@ struct HistoryView: View {
                                     .foregroundColor(colorForNutriScore(product.nutriScore))
                             }
 
-                            Text("Scanned on: \(formattedDate(product.scannedDate))")
+                            Text("\("scanned_on".localized) \(formattedDate(product.scannedDate))")
                                 .font(.caption)
                                 .foregroundColor(.gray)
                         }
@@ -38,7 +38,7 @@ struct HistoryView: View {
                     }
                 }
                 .listStyle(PlainListStyle())
-                .navigationTitle("Scan History")
+                .navigationTitle("scan_history".localized)
             }
             .onAppear(perform: loadHistory)
         }
@@ -89,7 +89,7 @@ struct FilterBarView: View {
                     Button(action: {
                         selectedFilter = filter
                     }) {
-                        Text(filter)
+                        Text(filter == "All" ? filter.localized : filter)
                             .font(.subheadline)
                             .fontWeight(.semibold)
                             .padding(.vertical, 8)

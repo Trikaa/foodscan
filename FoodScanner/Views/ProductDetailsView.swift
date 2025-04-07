@@ -3,7 +3,6 @@ import SwiftUI
 struct ProductDetailsView: View {
     let product: ProductDetailsModel
 
-    // Пример списков для подсветки
     let badIngredients = ["sugar", "salt", "palm oil", "fructose", "glucose", "preservative", "flavoring"]
     let goodIngredients = ["water", "rice", "oat", "wheat", "corn", "fruit"]
 
@@ -14,24 +13,24 @@ struct ProductDetailsView: View {
                     .font(.largeTitle)
                     .bold()
 
-                Text("Brand: \(product.brand)")
+                Text("\("brand".localized): \(product.brand)")
                     .font(.title3)
                     .foregroundColor(.gray)
 
                 // Nutri-Score
-                Text("Nutri-Score")
+                Text("nutri_score".localized)
                     .font(.headline)
                 NutriScoreView(nutriScore: product.nutriScore)
 
                 // NOVA Group
-                Text("NOVA Group")
+                Text("nova_group".localized)
                     .font(.headline)
                 NovaGroupView(novaGroup: product.novaGroup)
 
                 Divider()
 
                 // Ингредиенты
-                Text("Ingredients")
+                Text("ingredients".localized)
                     .font(.headline)
 
                 VStack(alignment: .leading, spacing: 5) {
@@ -44,21 +43,21 @@ struct ProductDetailsView: View {
                 Divider()
 
                 // Пищевая ценность
-                Text("Nutritional Information (per 100g)")
+                Text("nutritional_info".localized)
                     .font(.headline)
 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Energy: \(product.energy) kcal")
-                    Text("Proteins: \(String(format: "%.1f", product.proteins)) g")
-                    Text("Fats: \(String(format: "%.1f", product.fats)) g")
-                    Text("Carbohydrates: \(String(format: "%.1f", product.carbohydrates)) g")
-                    Text("Sugars: \(String(format: "%.1f", product.sugars)) g")
-                    Text("Salt: \(String(format: "%.1f", product.salt)) g")
+                    Text("\("energy".localized): \(product.energy) kcal")
+                    Text("\("proteins".localized): \(String(format: "%.1f", product.proteins)) g")
+                    Text("\("fats".localized): \(String(format: "%.1f", product.fats)) g")
+                    Text("\("carbohydrates".localized): \(String(format: "%.1f", product.carbohydrates)) g")
+                    Text("\("sugars".localized): \(String(format: "%.1f", product.sugars)) g")
+                    Text("\("salt".localized): \(String(format: "%.1f", product.salt)) g")
                 }
 
                 Divider()
 
-                Text("Scanned on: \(formatDate(product.scannedDate))")
+                Text("\("scanned_on".localized) \(formatDate(product.scannedDate))")
                     .font(.caption)
                     .foregroundColor(.gray)
 
@@ -66,7 +65,7 @@ struct ProductDetailsView: View {
             }
             .padding()
         }
-        .navigationTitle("Product Details")
+        .navigationTitle("product_details".localized)
         .navigationBarTitleDisplayMode(.inline)
     }
 

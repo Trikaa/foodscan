@@ -10,23 +10,24 @@ struct RegisterView: View {
     var body: some View {
         VStack(spacing: 20) {
             Spacer()
-            Text("Create Account")
+            
+            Text("create_account".localized)
                 .font(.largeTitle)
                 .bold()
 
-            TextField("Email", text: $email)
+            TextField("email".localized, text: $email)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal)
 
-            SecureField("Password", text: $password)
+            SecureField("password".localized, text: $password)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal)
 
-            SecureField("Confirm Password", text: $confirmPassword)
+            SecureField("confirm_password".localized, text: $confirmPassword)
                 .textFieldStyle(.roundedBorder)
                 .padding(.horizontal)
 
-            Button("Register") {
+            Button("register".localized) {
                 register()
             }
             .padding()
@@ -39,7 +40,11 @@ struct RegisterView: View {
             Spacer()
         }
         .alert(isPresented: $showAlert) {
-            Alert(title: Text("Registration Failed"), message: Text("Passwords do not match."), dismissButton: .default(Text("OK")))
+            Alert(
+                title: Text("registration_failed".localized),
+                message: Text("passwords_do_not_match".localized),
+                dismissButton: .default(Text("ok".localized))
+            )
         }
     }
 

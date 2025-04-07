@@ -78,7 +78,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
         setupOverlay()
 
-        // ✅ Запуск камеры на фоне
         DispatchQueue.global(qos: .userInitiated).async {
             self.captureSession.startRunning()
         }
@@ -115,8 +114,12 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
 
     func failed() {
-        let ac = UIAlertController(title: "Scanning not supported", message: "Your device does not support scanning a code.", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
+        let ac = UIAlertController(
+            title: NSLocalizedString("scanning_not_supported", comment: ""),
+            message: NSLocalizedString("device_not_supported", comment: ""),
+            preferredStyle: .alert
+        )
+        ac.addAction(UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .default))
         present(ac, animated: true)
         captureSession = nil
     }

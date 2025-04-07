@@ -8,7 +8,7 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("Hello, User!")
+                Text("hello_user".localized)
                     .font(.title)
                     .foregroundColor(.gray)
                 
@@ -22,10 +22,10 @@ struct ProfileView: View {
                     .frame(height: 120)
                     .overlay(
                         VStack {
-                            Text("thank_you")
+                            Text("thank_you".localized)
                                 .font(.headline)
                                 .padding(.bottom, 2)
-                            Text("thank_you_description")
+                            Text("thank_you_description".localized)
                                 .font(.subheadline)
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal)
@@ -33,29 +33,28 @@ struct ProfileView: View {
                     )
                     .padding(.vertical)
                 
-                // Переключатель языка
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("select_language")
+                    Text("select_language".localized)
                         .font(.headline)
-                    Picker("Language", selection: $languageManager.currentLanguage) {
-                        Text("English").tag("en")
-                        Text("Українська").tag("uk")
+                    Picker("language_picker".localized, selection: $languageManager.currentLanguage) {
+                        Text("english".localized).tag("en")
+                        Text("ukrainian".localized).tag("uk")
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 .padding(.horizontal)
                 
                 List {
-                    Label("edit_profile", systemImage: "person.crop.circle")
-                    Label("eating_preferences", systemImage: "fork.knife")
-                    Label("about_us", systemImage: "info.circle")
-                    Label("support_center", systemImage: "lifepreserver")
-                    Label("contact_us", systemImage: "envelope")
+                    Label("edit_profile".localized, systemImage: "person.crop.circle")
+                    Label("eating_preferences".localized, systemImage: "fork.knife")
+                    Label("about_us".localized, systemImage: "info.circle")
+                    Label("support_center".localized, systemImage: "lifepreserver")
+                    Label("contact_us".localized, systemImage: "envelope")
                     
                     Button(action: {
                         logout()
                     }) {
-                        Label("log_out", systemImage: "arrow.backward.square")
+                        Label("log_out".localized, systemImage: "arrow.backward.square")
                             .foregroundColor(.red)
                     }
                 }
@@ -64,7 +63,7 @@ struct ProfileView: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("profile")
+            .navigationTitle("profile".localized)
         }
     }
     

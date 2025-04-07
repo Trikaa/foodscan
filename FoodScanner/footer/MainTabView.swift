@@ -1,22 +1,25 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @StateObject private var languageManager = LanguageManager.shared
+    
     var body: some View {
         TabView {
             ProfileView()
                 .tabItem {
-                    Label("Profile", systemImage: "person")
+                    Label("profile".localized, systemImage: "person")
                 }
             
             ScanView()
                 .tabItem {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
+                    Label("scan".localized, systemImage: "qrcode.viewfinder")
                 }
             
             HistoryView()
                 .tabItem {
-                    Label("History", systemImage: "clock.arrow.circlepath")
+                    Label("history".localized, systemImage: "clock.arrow.circlepath")
                 }
         }
+        .id(languageManager.currentLanguage) // 🔥 Обновляем при смене языка
     }
 }

@@ -10,19 +10,20 @@ struct LoginView: View {
         NavigationView {
             VStack(spacing: 20) {
                 Spacer()
-                Text("Welcome!")
+                
+                Text("welcome".localized)
                     .font(.largeTitle)
                     .bold()
 
-                TextField("Email", text: $email)
+                TextField("email".localized, text: $email)
                     .textFieldStyle(.roundedBorder)
                     .padding(.horizontal)
 
-                SecureField("Password", text: $password)
+                SecureField("password".localized, text: $password)
                     .textFieldStyle(.roundedBorder)
                     .padding(.horizontal)
 
-                Button("Login") {
+                Button("login".localized) {
                     login()
                 }
                 .padding()
@@ -32,7 +33,7 @@ struct LoginView: View {
                 .cornerRadius(10)
                 .padding(.horizontal)
 
-                NavigationLink("Don't have an account? Register", destination: RegisterView())
+                NavigationLink("no_account_register".localized, destination: RegisterView())
                     .padding()
                     .onAppear {
                         let email = UserDefaults.standard.string(forKey: "userEmail") ?? "No Email"
@@ -47,7 +48,11 @@ struct LoginView: View {
                 Spacer()
             }
             .alert(isPresented: $showAlert) {
-                Alert(title: Text("Login Failed"), message: Text("Invalid credentials."), dismissButton: .default(Text("OK")))
+                Alert(
+                    title: Text("login_failed".localized),
+                    message: Text("invalid_credentials".localized),
+                    dismissButton: .default(Text("ok".localized))
+                )
             }
         }
     }

@@ -9,14 +9,17 @@ struct SplashView: View {
         } else {
             VStack {
                 Spacer()
+                
                 Image(systemName: "leaf.circle.fill")
                     .resizable()
                     .frame(width: 120, height: 120)
                     .foregroundColor(.green)
-                Text("FoodScanner")
+                
+                Text("foodscanner".localized)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.top, 20)
+                
                 Spacer()
             }
             .onAppear {
