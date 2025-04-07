@@ -2,16 +2,17 @@ import Foundation
 
 struct ProductDetailsModel: Codable, Identifiable {
     var id = UUID()
-    let productName: String
-    let brand: String
-    let nutriScore: String
-    let ingredients: [String]
-    let energy: Int
-    let proteins: Double
-    let fats: Double
-    let carbohydrates: Double
-    let sugars: Double
-    let salt: Double
-    let novaGroup: Int
-    let scannedDate: Date
+    var productName: String
+    var brand: String
+    var nutriScore: String
+    var ingredients: [String]
+    var energy: Int
+    var proteins: Double
+    var fats: Double
+    var carbohydrates: Double
+    var sugars: Double
+    var salt: Double
+    var novaGroup: Int
+    var scannedDate: Date
+    var source: String
 }

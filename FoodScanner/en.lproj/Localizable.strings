@@ -1,76 +1,78 @@
-// main
+// Main Tabs
 "profile" = "Profile";
 "scan" = "Scan";
 "history" = "History";
-"Scan History" = "Scan History";
+"scan_history" = "Scan History";
 
 // Splash & General
-foodscanner = "FoodScanner";
+"foodscanner" = "FoodScanner";
 
 // Login
-welcome = "Welcome!";
-email = "Email";
-password = "Password";
-login = "Login";
-no_account_register = "Don't have an account? Register";
-login_failed = "Login Failed";
-invalid_credentials = "Invalid credentials.";
-ok = "OK";
+"welcome" = "Welcome!";
+"email" = "Email";
+"password" = "Password";
+"login" = "Login";
+"no_account_register" = "Don't have an account? Register";
+"login_failed" = "Login Failed";
+"invalid_credentials" = "Invalid credentials.";
+"ok" = "OK";
 
 // Register
-create_account = "Create Account";
-confirm_password = "Confirm Password";
-register = "Register";
-registration_failed = "Registration Failed";
-passwords_do_not_match = "Passwords do not match.";
+"create_account" = "Create Account";
+"confirm_password" = "Confirm Password";
+"register" = "Register";
+"registration_failed" = "Registration Failed";
+"passwords_do_not_match" = "Passwords do not match.";
 
 // Profile
-hello_user = "Hello, User!";
-thank_you = "Thank you for supporting us!";
-thank_you_description = "As a local business, we thank you for supporting us and hope you enjoy.";
-select_language = "Select Language";
-language_picker = "Language";
-english = "English";
-ukrainian = "Ukrainian";
-edit_profile = "Edit Profile";
-eating_preferences = "Eating Preferences";
-about_us = "About Us";
-support_center = "Support Center";
-contact_us = "Contact Us";
-log_out = "Log out";
-profile = "Profile";
+"hello_user" = "Hello, User!";
+"thank_you" = "Thank you for supporting us!";
+"thank_you_description" = "As a local business, we thank you for supporting us and hope you enjoy.";
+"select_language" = "Select Language";
+"language_picker" = "Language";
+"english" = "English";
+"ukrainian" = "Ukrainian";
+"edit_profile" = "Edit Profile";
+"eating_preferences" = "Eating Preferences";
+"about_us" = "About Us";
+"support_center" = "Support Center";
+"contact_us" = "Contact Us";
+"log_out" = "Log out";
 
 // ScanView
-scan_product_start = "Scan a product to get started!";
-scan_barcode = "Scan Barcode";
-scan_product_title = "Scan Product";
-invalid_url = "Invalid URL.";
-network_error = "Network error:";
-no_data_received = "No data received.";
-no_product_found = "No product found.";
-decoding_error = "Decoding error:";
-unknown_product = "Unknown Product";
-unknown_brand = "Unknown Brand";
+"scan_product_start" = "Scan a product to get started!";
+"scan_barcode" = "Scan Barcode";
+"scan_product_title" = "Scan Product";
+"invalid_url" = "Invalid URL.";
+"network_error" = "Network error:";
+"no_data_received" = "No data received.";
+"decoding_error" = "Decoding error:";
+"unknown_product" = "Unknown Product";
+"unknown_brand" = "Unknown Brand";
 
-// Scanner errors
-scanning_not_supported = "Scanning not supported";
-device_not_supported = "Your device does not support scanning a code.";
+// Loading & Errors
+"loading_product_details" = "Loading product details...";
+"no_product_found" = "We searched all databases but couldn't find your product. Sorry about that!";
+"scanning_not_supported" = "Scanning not supported.";
+"device_not_supported" = "Your device does not support scanning a code.";
 
 // HistoryView
-brand = "Brand";
-nutri_score = "Nutri-Score:";
-scanned_on = "Scanned on:";
-scan_history = "Scan History";
-all = "All";
+"brand" = "Brand";
+"nutri_score" = "Nutri-Score:";
+"scanned_on" = "Scanned on:";
+"all" = "All";
 
 // ProductDetailsView
-ingredients = "Ingredients";
-nutritional_info = "Nutritional Information (per 100g)";
-energy = "Energy";
-proteins = "Proteins";
-fats = "Fats";
-carbohydrates = "Carbohydrates";
-sugars = "Sugars";
-salt = "Salt";
-product_details = "Product Details";
-nova_group = "NOVA Group";
+"ingredients" = "Ingredients";
+"nutritional_info" = "Nutritional Information (per 100g)";
+"energy" = "Energy";
+"proteins" = "Proteins";
+"fats" = "Fats";
+"carbohydrates" = "Carbohydrates";
+"sugars" = "Sugars";
+"salt" = "Salt";
+"product_details" = "Product Details";
+"nova_group" = "NOVA Group";
+"no_ingredients" = "No ingredients information available.";
+"no_nutritional_info" = "No nutritional information available.";
+"source" = "Source";
