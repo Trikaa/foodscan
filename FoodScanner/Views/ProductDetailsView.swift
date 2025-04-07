@@ -3,46 +3,56 @@ import SwiftUI
 struct ProductDetailsView: View {
     let product: ProductDetailsModel
 
+    // 🔥 Оригинальные плохие и хорошие ингредиенты (по-английски)
     let badIngredients = ["sugar", "salt", "palm oil", "fructose", "glucose", "preservative", "flavoring"]
     let goodIngredients = ["water", "rice", "oat", "wheat", "corn", "fruit"]
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text(product.productName)
+                // ✅ Название продукта (локализированное)
+                Text(product.productName.localized)
                     .font(.largeTitle)
                     .bold()
 
+                // ✅ Бренд (оригинал, без локализации)
                 Text("\("brand".localized): \(product.brand)")
                     .font(.title3)
                     .foregroundColor(.gray)
 
-                // Nutri-Score
+                // ✅ Nutri-Score
                 Text("nutri_score".localized)
                     .font(.headline)
                 NutriScoreView(nutriScore: product.nutriScore)
 
-                // NOVA Group
+                // ✅ NOVA Group
                 Text("nova_group".localized)
                     .font(.headline)
                 NovaGroupView(novaGroup: product.novaGroup)
 
                 Divider()
 
-                // Ингредиенты
+                // ✅ Ингредиенты
                 Text("ingredients".localized)
                     .font(.headline)
 
-                VStack(alignment: .leading, spacing: 5) {
-                    ForEach(product.ingredients, id: \.self) { ingredient in
-                        Text(ingredient)
-                            .foregroundColor(colorForIngredient(ingredient))
+                if product.ingredients.isEmpty {
+                    Text("No ingredients information available.".localized)
+                        .foregroundColor(.gray)
+                        .italic()
+                } else {
+                    VStack(alignment: .leading, spacing: 5) {
+                        ForEach(product.ingredients, id: \.self) { ingredient in
+                            let trimmedIngredient = ingredient.trimmingCharacters(in: .whitespacesAndNewlines)
+                            Text(trimmedIngredient.localized)
+                                .foregroundColor(colorForIngredient(trimmedIngredient))
+                        }
                     }
                 }
 
                 Divider()
 
-                // Пищевая ценность
+                // ✅ Пищевая ценность
                 Text("nutritional_info".localized)
                     .font(.headline)
 
@@ -57,7 +67,8 @@ struct ProductDetailsView: View {
 
                 Divider()
 
-                Text("\("scanned_on".localized) \(formatDate(product.scannedDate))")
+                // ✅ Дата сканирования
+                Text("\("scanned_on".localized): \(formatDate(product.scannedDate))")
                     .font(.caption)
                     .foregroundColor(.gray)
 
@@ -69,17 +80,21 @@ struct ProductDetailsView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 
+    // 📍 Функция определения цвета для ингредиента (анализируем до перевода!)
     func colorForIngredient(_ ingredient: String) -> Color {
-        let lowerIngredient = ingredient.lowercased()
-        if badIngredients.contains(where: { lowerIngredient.contains($0) }) {
+        let lowercasedIngredient = ingredient.lowercased()
+        
+        // Проверяем по оригинальным спискам плохих и хороших ингредиентов
+        if badIngredients.contains(where: { lowercasedIngredient.contains($0) }) {
             return .red
-        } else if goodIngredients.contains(where: { lowerIngredient.contains($0) }) {
+        } else if goodIngredients.contains(where: { lowercasedIngredient.contains($0) }) {
             return .green
         } else {
             return .primary
         }
     }
 
+    // 📆 Форматирование даты
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

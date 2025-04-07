@@ -1,0 +1,147 @@
+2025-04-07 11:56:36 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x110716000; archive(resolved)="<IDEArchive: 0x6000020745b0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team(resolved)="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x110716000; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionProcessingPipelineContext: 0x110715d70; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x110710c00; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x1529fb940; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x1529fb470; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x150f4eeb0; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x1529f9440; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x1529f9230; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x1529f9020; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="<IDEProvisioningBasicTeam: 0x600000aa4000; teamID='F6DAPAJ63Z', teamName='Andrew Tr'>">
+	<IDEDistributionContext: 0x150e137d0; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="(null)">
+	<IDEDistributionContext: 0x15280e380; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="(null)">
+	<IDEDistributionContext: 0x15280dbd0; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="(null)">
+	<IDEDistributionContext: 0x150e0b020; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x6000009f4c60>", team="(null)">
+	<IDEDistributionContext: 0x150f45480; archive = "<IDEArchive: 0x6000020745b0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x110716000>
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2025-04-07 11:56:36 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app' '/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root/Payload/FoodScanner.app'
+2025-04-07 11:56:36 +0000  >>> Copying /Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app 
+2025-04-07 11:56:36 +0000  copying file ./_CodeSignature/CodeResources ... 
+2025-04-07 11:56:36 +0000  4013 bytes for ./_CodeSignature/CodeResources
+2025-04-07 11:56:36 +0000  copying file ./en.lproj/Localizable.strings ... 
+2025-04-07 11:56:36 +0000  2034 bytes for ./en.lproj/Localizable.strings
+2025-04-07 11:56:36 +0000  copying file ./uk.lproj/Localizable.strings ... 
+2025-04-07 11:56:36 +0000  3110 bytes for ./uk.lproj/Localizable.strings
+2025-04-07 11:56:36 +0000  copying file ./AppIcon60x60@2x.png ... 
+2025-04-07 11:56:36 +0000  4002 bytes for ./AppIcon60x60@2x.png
+2025-04-07 11:56:36 +0000  copying file ./FoodScanner ... 
+2025-04-07 11:56:36 +0000  961776 bytes for ./FoodScanner
+2025-04-07 11:56:36 +0000  copying file ./CodeScanner_CodeScanner.bundle/Assets.car ... 
+2025-04-07 11:56:36 +0000  54287 bytes for ./CodeScanner_CodeScanner.bundle/Assets.car
+2025-04-07 11:56:36 +0000  copying file ./CodeScanner_CodeScanner.bundle/Info.plist ... 
+2025-04-07 11:56:36 +0000  692 bytes for ./CodeScanner_CodeScanner.bundle/Info.plist
+2025-04-07 11:56:36 +0000  copying file ./Assets.car ... 
+2025-04-07 11:56:36 +0000  785184 bytes for ./Assets.car
+2025-04-07 11:56:36 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2025-04-07 11:56:36 +0000  5573 bytes for ./AppIcon76x76@2x~ipad.png
+2025-04-07 11:56:36 +0000  copying file ./embedded.mobileprovision ... 
+2025-04-07 11:56:36 +0000  12229 bytes for ./embedded.mobileprovision
+2025-04-07 11:56:36 +0000  copying file ./Info.plist ... 
+2025-04-07 11:56:36 +0000  1458 bytes for ./Info.plist
+2025-04-07 11:56:36 +0000  copying file ./PkgInfo ... 
+2025-04-07 11:56:36 +0000  8 bytes for ./PkgInfo
+2025-04-07 11:56:36 +0000 [MT] /usr/bin/ditto exited with 0
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
+2025-04-07 11:56:36 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2025-04-07 11:56:36 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2025-04-07 11:56:36 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2025-04-07 11:56:36 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionArchThinningStep
+2025-04-07 11:56:36 +0000 [MT] Item /Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2025-04-07 11:56:36 +0000 [MT] Archs to thin for item /Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app are ["arm64e"]
+2025-04-07 11:56:36 +0000 [MT] Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root/Payload/FoodScanner.app/FoodScanner' '-verify_arch' 'arm64e'
+2025-04-07 11:56:36 +0000 [MT] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2025-04-07 11:56:36 +0000 [MT] Skipping architecture thinning for item "FoodScanner" because arch "arm64e" wasn't found
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionODRStep
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2025-04-07 11:56:36 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2025-04-07 11:56:36 +0000 [MT] Entitlements for <IDEDistributionItem: 0x600002fd6a00; bundleID='---.FoodScanner', path='<DVTFilePath:0x600002f86ca0:'/Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600002f7bea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600003eda340; name='Apple Development: anjeitrikachev@gmail.com (KGHBLTZXUN)', hash='624952AF27F336216E927B61535EDB21BB3684CB', serialNumber='2ECA3C7D6FA7A92BDACE6FC0065B7E9D', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-04-06 16:42:33 +0000''>', entitlements='{
+    "application-identifier" = "F6DAPAJ63Z.---.FoodScanner";
+    "com.apple.developer.team-identifier" = F6DAPAJ63Z;
+    "get-task-allow" = 1;
+}', teamID='F6DAPAJ63Z', identifier='---.FoodScanner', executablePath='<DVTFilePath:0x600002f7ca20:'/Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app/FoodScanner'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "F6DAPAJ63Z.---.FoodScanner";
+    "com.apple.developer.team-identifier" = F6DAPAJ63Z;
+    "get-task-allow" = 1;
+}
+2025-04-07 11:56:36 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2025-04-07 11:56:36 +0000 [MT] Entitlements for <IDEDistributionItem: 0x600002fd6a00; bundleID='---.FoodScanner', path='<DVTFilePath:0x600002f86ca0:'/Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600002f7bea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600003edb3c0; name='Apple Development: anjeitrikachev@gmail.com (KGHBLTZXUN)', hash='624952AF27F336216E927B61535EDB21BB3684CB', serialNumber='2ECA3C7D6FA7A92BDACE6FC0065B7E9D', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-04-06 16:42:33 +0000''>', entitlements='{
+    "application-identifier" = "F6DAPAJ63Z.---.FoodScanner";
+    "com.apple.developer.team-identifier" = F6DAPAJ63Z;
+    "get-task-allow" = 1;
+}', teamID='F6DAPAJ63Z', identifier='---.FoodScanner', executablePath='<DVTFilePath:0x600002f7ca20:'/Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app/FoodScanner'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "F6DAPAJ63Z.---.FoodScanner";
+    "com.apple.developer.team-identifier" = F6DAPAJ63Z;
+    "get-task-allow" = 1;
+}
+2025-04-07 11:56:36 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x600002fd6a00; bundleID='---.FoodScanner', path='<DVTFilePath:0x600002f86ca0:'/Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600002f7bea0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600003edb3c0; name='Apple Development: anjeitrikachev@gmail.com (KGHBLTZXUN)', hash='624952AF27F336216E927B61535EDB21BB3684CB', serialNumber='2ECA3C7D6FA7A92BDACE6FC0065B7E9D', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2025-04-06 16:42:33 +0000''>', entitlements='{
+    "application-identifier" = "F6DAPAJ63Z.---.FoodScanner";
+    "com.apple.developer.team-identifier" = F6DAPAJ63Z;
+    "get-task-allow" = 1;
+}', teamID='F6DAPAJ63Z', identifier='---.FoodScanner', executablePath='<DVTFilePath:0x600002f7ca20:'/Users/atrika/Library/Developer/Xcode/Archives/2025-04-07/FoodScanner 07.04.2025, 13.40.xcarchive/Products/Applications/FoodScanner.app/FoodScanner'>', hardenedRuntime='0'>'> to: /var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/entitlements~~~ymZLMJ
+2025-04-07 11:56:36 +0000 [MT] invoking codesign: <NSConcreteTask: 0x600002bbe030; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    624952AF27F336216E927B61535EDB21BB3684CB,
+    "--entitlements",
+    "/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/entitlements~~~ymZLMJ",
+    "--preserve-metadata=identifier,flags,runtime",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root/Payload/FoodScanner.app"
+)'>
+2025-04-07 11:56:36 +0000 [MT] codesign output: /var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root/Payload/FoodScanner.app: replacing existing signature
+/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root/Payload/FoodScanner.app: signed app bundle with Mach-O thin (arm64) [---.FoodScanner]
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
+2025-04-07 11:56:36 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2025-04-07 11:56:36 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root' '/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Packages/FoodScanner.ipa'
+2025-04-07 11:56:36 +0000  >>> Copying /var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root 
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/_CodeSignature/CodeResources ... 
+2025-04-07 11:56:36 +0000  4013 bytes for ./Payload/FoodScanner.app/_CodeSignature/CodeResources
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/en.lproj/Localizable.strings ... 
+2025-04-07 11:56:36 +0000  2034 bytes for ./Payload/FoodScanner.app/en.lproj/Localizable.strings
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/uk.lproj/Localizable.strings ... 
+2025-04-07 11:56:36 +0000  3110 bytes for ./Payload/FoodScanner.app/uk.lproj/Localizable.strings
+copying file ./Payload/FoodScanner.app/AppIcon60x60@2x.png ... 
+2025-04-07 11:56:36 +0000  4002 bytes for ./Payload/FoodScanner.app/AppIcon60x60@2x.png
+copying file ./Payload/FoodScanner.app/FoodScanner ... 
+2025-04-07 11:56:36 +0000  961776 bytes for ./Payload/FoodScanner.app/FoodScanner
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/CodeScanner_CodeScanner.bundle/Assets.car ... 
+2025-04-07 11:56:36 +0000  54287 bytes for ./Payload/FoodScanner.app/CodeScanner_CodeScanner.bundle/Assets.car
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/CodeScanner_CodeScanner.bundle/Info.plist ... 
+2025-04-07 11:56:36 +0000  692 bytes for ./Payload/FoodScanner.app/CodeScanner_CodeScanner.bundle/Info.plist
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/Assets.car ... 
+2025-04-07 11:56:36 +0000  785184 bytes for ./Payload/FoodScanner.app/Assets.car
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/AppIcon76x76@2x~ipad.png ... 
+2025-04-07 11:56:36 +0000  5573 bytes for ./Payload/FoodScanner.app/AppIcon76x76@2x~ipad.png
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/embedded.mobileprovision ... 
+2025-04-07 11:56:36 +0000  12229 bytes for ./Payload/FoodScanner.app/embedded.mobileprovision
+2025-04-07 11:56:36 +0000  copying file ./Payload/FoodScanner.app/Info.plist ... 
+2025-04-07 11:56:36 +0000  1458 bytes for ./Payload/FoodScanner.app/Info.plist
+copying file ./Payload/FoodScanner.app/PkgInfo ... 
+2025-04-07 11:56:36 +0000  8 bytes for ./Payload/FoodScanner.app/PkgInfo
+2025-04-07 11:56:36 +0000 [MT] /usr/bin/ditto exited with 0
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
+2025-04-07 11:56:36 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
+2025-04-07 11:56:36 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x600002f39d40:'/var/folders/yy/4sg7xxc55gl76lzhm06p152c0000gn/T/XcodeDistPipeline.~~~AszfC3/Root/Payload/FoodScanner.app'>
+2025-04-07 11:56:36 +0000 [MT] Processing step: IDEDistributionCreateManifestStep
