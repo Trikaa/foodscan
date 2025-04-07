@@ -10,7 +10,7 @@ struct HistoryView: View {
             VStack {
                 FilterBarView(selectedFilter: $selectedFilter)
 
-                List(filteredHistory, id: \.productName) { product in
+                List(filteredHistory, id: \.id) { product in
                     NavigationLink(destination: ProductDetailsView(product: product)) {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(product.productName)
